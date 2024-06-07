@@ -1,0 +1,17 @@
+@import url('tailwind.css');
+@layer components{
+
+    .card {
+        @apply h-auto bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700;
+    }
+    .card-header {
+        border-bottom: 1px solid #545454;
+        @apply border-b-gray-200 p-1.5 flex;
+    }
+    .card-extra {
+        @apply ml-auto
+    }
+    .card-body {
+        @apply p-1.5;
+    }
+}
