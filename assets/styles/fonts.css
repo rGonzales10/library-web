@@ -1,0 +1,10 @@
+@import url('tailwind.css');
+
+@layer components {
+    h1{ @apply font-bold }
+    h2{ @apply font-semibold }
+    h3{ @apply font-semibold }
+    h4{ @apply font-medium }
+    h5{ @apply font-medium }
+    h6{ @apply font-medium }
+}
