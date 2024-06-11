@@ -2,5 +2,5 @@
 * {
     margin: 0;
     padding: 0px;
-    font-family: sans-serif;
+    box-sizing: border-box; 
 }

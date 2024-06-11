@@ -10,20 +10,57 @@
     </div>
 </template>
 <script lang="ts" setup>
-import type { ICards } from '~/types/components/card';
-const props = withDefaults(defineProps<ICards>(), {
-    title: '',
-    cardClass: '',
-    headerClass: '',
-    bodyClass: '',
-    footerClass: '',
-    style: '',
-    headerStyle: '',
-    bodyStyle: '',
-    footerStyle: '',
-    header: true,
-    footer: false,
-});
+const props = defineProps({
+    title: {
+        type: String,
+        required: false,
+    },
+    cardClass: {
+        type: String,
+        required: false,
+    },
+    headerClass: {
+        type: String,
+        required: false
+    },
+    bodyClass: {
+        type: String,
+        required: false
+    },
+    footerClass: {
+        type: String,
+        required: false
+    },
+    style: {
+        type: Object,
+        required: false,
+        defaultValue: {}
+    },
+    headerStyle: {
+        type: Object,
+        required: false,
+        defaultValue: {}
+    },
+    bodyStyle: {
+        type: Object,
+        required: false,
+        defaultValue: {}
+    },
+    footerStyle: {
+        type: String,
+        required: false
+    },
+    header: {
+        type: Boolean, 
+        required: false,
+        defaultValue: true
+    },
+    footer: {
+        type: Boolean,
+        required: false,
+        defaultValue: false
+    }
+})
 </script>
 <style scoped>
 
